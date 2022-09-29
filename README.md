@@ -17,7 +17,7 @@ As far as I can tell, the model is doing something along these lines. It learns 
 
 I’ll try to explain what I think the singular attention head is doing. An instructive image is that of its attention pattern on an input sequence. In the following image, the left number for each tick represents the actual digit, the right represents the position of that digit in the sequence.
 
-![attn_plot]()
+![attn_plot](Head0AttnPattern.jpeg)
 
 The head seems to naturally learn the ordering of tokens and relative proximity of digits to one another, e.g. 0 is close to 1, 1 is close to 0 and 2, etc. The head looks back at the input sequence to try and figure out which tokens in the input are numerically close to the current token (either the same digit, or within +/- 1 of the digit) and therefore which ones it should output next, though the heads are smart enough to catch onto “jumps” from one digit to the next and thus pay attention to e.g. 8 and 7 key tokens in the input from a 5 query token when there are no 6s in the input.
 
