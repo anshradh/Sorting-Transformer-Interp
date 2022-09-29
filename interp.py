@@ -1,7 +1,6 @@
 # %%
 import torch
-from torch.utils.data import DataLoader
-from SortingTransformer.training_sorting_gpt2 import (
+from .train import (
     sort_gpt_attn_only_config,
     test_dataset,
 )
