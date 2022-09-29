@@ -1,6 +1,8 @@
 # Sorting-Transformer-Interp
 A mechanistic interpretability project meant to analyze how a simple transformer learns to sort a sequence of 10 digits.
 
+NOTE: This code won't run as-is - it relies on some private code that I'm not sharing here, though very similar code can be found in the [Easy Transformer Library](https://github.com/neelnanda-io/Easy-Transformer).
+
 ## High-level Overview
 
 I trained a 1-layer, 1-head, attention-only transformer to sort a sequence of 10 digits. The transformer learned the task extremely well, earning over 99.8% accuracy on 10000 random examples- I then decided to try and figure out how the model was performing the task, taking inspiration from Nix Golodowsky-Dill’s interpretability work on Redwood’s balanced parentheses classifier model.
