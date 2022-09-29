@@ -23,7 +23,7 @@ The head seems to naturally learn the ordering of tokens and relative proximity 
 
 The QK circuit generally corroborates this:
 
-![qk_circuit]()
+![qk_circuit](QKCircuit.jpeg)
 
 The top left corner basically shows the ordering/numerical proximity point (0 pays most attention to 0, 1 pays most attention to 1 and then 0). Positions 0-8 are fairly irrelevant, since they’re always just the (scrambled) input sequence, but at position 9, the model really likes token 0 and at position 18 the model really likes 9, since 0 is likely to start a sorted sequence (beginning at position 10) and 9 is likely to end a sorted sequence (ending at position 19).
 
