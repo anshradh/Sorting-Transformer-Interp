@@ -5,7 +5,7 @@ NOTE: This code won't run as-is - it relies on some private code that I'm not sh
 
 ## High-level Overview
 
-I trained a 1-layer, 1-head, attention-only transformer to sort a sequence of 10 digits. The transformer learned the task extremely well, earning over 99.8% accuracy on 10000 random examples- I then decided to try and figure out how the model was performing the task, taking inspiration from Nix Golodowsky-Dill’s interpretability work on Redwood’s balanced parentheses classifier model.
+I trained a 1-layer, 1-head, attention-only transformer to sort a sequence of 10 digits. The transformer learned the task extremely well, earning over 99.8% accuracy on 10000 random examples- I then decided to try and figure out what the model was doing mechanistically.
 
 ## Background and Initial Hypothesis
 
